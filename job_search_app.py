@@ -115,13 +115,13 @@ if st.button("🚀 Auto-Apply to All"):
 st.markdown("""
    <hr style="margin-top: 2rem; margin-bottom: 0.5rem;">
     <div style='text-align: center; font-size: 12px; color: #8B0000;'>
-        © 2025 VIKRANT THENGE. All rights reserved.
+        © 2025 All rights reserved.
     </div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
     <hr style='margin-top: 40px;'>
     <div style='text-align: center; font-size: 14px; color: gray;'>
-        © 2025 Vikrant Thenge · Built with ❤️ using Streamlit
+        · Built with ❤️ using Streamlit
     </div>
 """, unsafe_allow_html=True)
