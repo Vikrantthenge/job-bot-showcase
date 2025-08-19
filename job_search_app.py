@@ -4,39 +4,12 @@ import requests
 from PIL import Image
 
 # --- Page Setup ---
-
-import streamlit as st
-
-# Set page configuration
-st.set_page_config(
-    page_title="Job Search Bot",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
-
-# Inject custom CSS to remove top padding
-st.markdown("""
-    <style>
-        .block-container {
-            padding-top: 0rem;
-        }
-        header {visibility: hidden;}
-    </style>
-""", unsafe_allow_html=True)
-
-# Display banner image
-st.image("your_logo.png", use_column_width=True)
-
-#st.set_page_config(
- #   page_title="Job Search Bot",
-  #  layout="wide",
-   # initial_sidebar_state="collapsed"
-#)
+st.set_page_config(page_title="Job Search Bot", layout="wide")
 
 # --- Logo ---
 try:
     logo = Image.open("your_logo.png")
-    st.image(logo, width=400)
+    st.image(logo, width=)
 except FileNotFoundError:
     st.warning("Logo file 'your_logo.png' not found. Please add it to the app folder.")
 
