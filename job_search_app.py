@@ -80,7 +80,7 @@ if st.button("🚀 Auto-Apply to All"):
     else:
         st.error("Please upload your resume first.")
 
-Add styled copyright footer
+# Add styled copyright footer
 st.markdown("""
    <hr style="margin-top: 2rem; margin-bottom: 0.5rem;">
     <div style='text-align: center; font-size: 12px; color: #8B0000;'>
