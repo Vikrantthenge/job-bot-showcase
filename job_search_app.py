@@ -6,6 +6,15 @@ from PIL import Image
 # --- Page Setup ---
 st.set_page_config(page_title="Job Search Bot", layout="wide")
 
+st.markdown("""
+    <div style='text-align: center; font-size: 20px; font-weight: 600; color: #8B0000; margin-bottom: 0.5rem;'>
+        🚀 Data Job Finder + Resume Uploader
+    </div>
+    <div style='text-align: center; font-size: 16px; color: #333333; margin-bottom: 1.5rem;'>
+        Discover curated data job listings and upload your resume with ease. This app streamlines your job search by combining smart filtering, intuitive design, and recruiter-ready presentation — all in one place.
+    </div>
+
+
 # --- Logo ---
 try:
     logo = Image.open("your_logo.png")
@@ -18,7 +27,7 @@ except FileNotFoundError:
 st.markdown("""
     <hr style="margin-top: 2rem; margin-bottom: 0.5rem;">
     <div style='text-align: center; font-size: 36px; color: #8B0000; font-weight: 500;'>
-        💼📄 <b>Data Job Finder + Resume Uploader</b><br>
+        💼<b>Data Job Finder + Resume Uploader</b><br>
         <span style='font-size: 14px; font-weight: 400;'>&copy; 2025 VIKRANT THENGE. All rights reserved.</span>
     </div>
 """, unsafe_allow_html=True)
