@@ -4,7 +4,7 @@ import requests
 from PIL import Image
 
 # --- Page Setup ---
-st.set_page_config(page_title="Job Search Bot", layout="banner")
+st.set_page_config(page_title="Job Search Bot", layout="centered")
 
 # --- Logo ---
 try:
