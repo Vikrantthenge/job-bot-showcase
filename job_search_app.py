@@ -62,8 +62,7 @@ if st.sidebar.button("Search Jobs"):
     with st.spinner("Fetching jobs..."):
         job_df = fetch_jobs(keywords, location, num_pages)
         if not job_df.empty:
-            st.subheader("💼
- Job Listings")
+            st.subheader("💼 Job Listings")
             for i, row in job_df.iterrows():
                 st.markdown(f"**{row['Job Title']}** at *{row['Company']}* — {row['Location']}")
                 st.markdown(f"[Apply Now]({row['Apply Link']})", unsafe_allow_html=True)
