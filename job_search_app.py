@@ -17,7 +17,7 @@ except FileNotFoundError:
 # --- Title & Tagline ---
 #st.title("Data Job Finder + Resume Uploader")
 st.markdown("""
-    <div style='text-align: center; font-size: 20px; font-weight: 600; color: #8B0000; margin-bottom: 0.5rem;'>
+    <div style='text-align: center; font-size: 40px; font-weight: 600; color: #8B0000; margin-bottom: 0.5rem;'>
         🚀 Data Job Finder + Resume Uploader
     </div>
     <div style='text-align: center; font-size: 16px; color: #333333; margin-bottom: 1.5rem;'>
