@@ -4,7 +4,7 @@ import requests
 from PIL import Image
 
 # --- Page Setup ---
-st.set_page_config(page_title="Job Search Bot", layout="wide")
+# st.set_page_config(page_title="Job Search Bot", layout="wide")
 
 # --- Logo ---
 try:
@@ -12,7 +12,6 @@ try:
     st.image(logo, width=150)
 except FileNotFoundError:
     st.warning("Logo file 'your_logo.png' not found. Please add it to the app folder.")
-
 
 # --- Title & Tagline ---
 st.title("Data Job Finder + Resume Uploader")
