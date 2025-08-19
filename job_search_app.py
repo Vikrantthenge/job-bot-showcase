@@ -16,10 +16,13 @@ except FileNotFoundError:
 # --- Title & Tagline ---
 #st.title("Data Job Finder + Resume Uploader")
 st.markdown("""
-    <div style='text-align: center; font-size: 14px; color: #8B0000;'>
-        💼📄 <b>Data Job Finder + Resume Uploader</b>
+    <hr style="margin-top: 2rem; margin-bottom: 0.5rem;">
+    <div style='text-align: center; font-size: 18px; color: #8B0000; font-weight: 500;'>
+        💼📄 <b>Data Job Finder + Resume Uploader</b><br>
+        <span style='font-size: 14px; font-weight: 400;'>&copy; 2025 VIKRANT Thenge. All rights reserved.</span>
     </div>
 """, unsafe_allow_html=True)
+
 st.markdown("##### *Your personalized job search assistant — built for speed, clarity, and results.*")
 
 # --- Sidebar Filters ---
@@ -75,9 +78,9 @@ if st.button("🚀 Auto-Apply to All"):
         st.error("Please upload your resume first.")
 
 # Add styled copyright footer
-st.markdown("""
-    <hr style="margin-top: 2rem; margin-bottom: 0.5rem;">
-    <div style='text-align: center; font-size: 12px; color: #8B0000;'>
-        © 2025 VIKRANT Thenge. All rights reserved.
-    </div>
-""", unsafe_allow_html=True)
+# st.markdown("""
+   #  <hr style="margin-top: 2rem; margin-bottom: 0.5rem;">
+    # <div style='text-align: center; font-size: 12px; color: #8B0000;'>
+      #   © 2025 VIKRANT Thenge. All rights reserved.
+    # </div>
+#  """, unsafe_allow_html=True)
