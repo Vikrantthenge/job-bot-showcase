@@ -1,3 +1,4 @@
+import streamlit as st
 st.markdown("""
     <div style='text-align: center; font-size: 24px; font-weight: bold; color: #8B0000; margin-bottom: 20px;'>
         🚀 <span style='color:#333;'>JobBot</span> by <span style='color:#8B0000;'>Vikrant Thenge</span>
