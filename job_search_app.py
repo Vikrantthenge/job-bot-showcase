@@ -11,6 +11,7 @@ from PIL import Image
 
 try:
     logo = Image.open("your_logo.png")
+    st.image(logo, width=150)
     st.markdown("""
         <div style='display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;'>
             <img src='your_logo.png' width='60'>
