@@ -80,10 +80,10 @@ if st.button("🚀 Auto-Apply to All"):
     else:
         st.error("Please upload your resume first.")
 
-# Add styled copyright footer
-# st.markdown("""
-   #  <hr style="margin-top: 2rem; margin-bottom: 0.5rem;">
-    # <div style='text-align: center; font-size: 12px; color: #8B0000;'>
-      #   © 2025 VIKRANT Thenge. All rights reserved.
-    # </div>
-#  """, unsafe_allow_html=True)
+Add styled copyright footer
+st.markdown("""
+   <hr style="margin-top: 2rem; margin-bottom: 0.5rem;">
+    <div style='text-align: center; font-size: 12px; color: #8B0000;'>
+        © 2025 VIKRANT THENGE. All rights reserved.
+    </div>
+""", unsafe_allow_html=True)
