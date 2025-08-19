@@ -14,7 +14,12 @@ except FileNotFoundError:
     st.warning("Logo file 'your_logo.png' not found. Please add it to the app folder.")
 
 # --- Title & Tagline ---
-st.title("Data Job Finder + Resume Uploader")
+#st.title("Data Job Finder + Resume Uploader")
+st.markdown("""
+    <div style='text-align: center; font-size: 14px; color: #8B0000;'>
+        💼📄 <b>Data Job Finder + Resume Uploader</b>
+    </div>
+""", unsafe_allow_html=True)
 st.markdown("##### *Your personalized job search assistant — built for speed, clarity, and results.*")
 
 # --- Sidebar Filters ---
@@ -25,7 +30,7 @@ num_pages = st.sidebar.slider("Pages to Search", 1, 5, 1)
 st.sidebar.markdown("**Tech Stack:** Python · Streamlit · RapidAPI · Resume Parsing · Automation")
 
 # --- Resume Upload ---
-st.subheader("📄 Upload Your Resume")
+st.subheader("📤 Upload Your Resume")
 resume = st.file_uploader("Upload PDF Resume", type=["pdf"])
 if resume:
     st.success("Resume uploaded successfully!")
