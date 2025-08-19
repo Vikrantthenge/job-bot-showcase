@@ -19,16 +19,23 @@ from PIL import Image
 import base64
 from io import BytesIO
 
+# --- Load and encode logo ---
 try:
-    logo = Image.open("your_logo.png")
-    st.markdown("""
+    logo = Image.open("your_logo.png")  # Replace with your actual image filename
+    buffered = BytesIO()
+    logo.save(buffered, format="PNG")
+    img_base64 = base64.b64encode(buffered.getvalue()).decode()
+
+    # --- Display logo + tagline side-by-side ---
+    st.markdown(f"""
         <div style='display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;'>
-            <img src='your_logo.png' width='60'>
+            <img src='data:image/png;base64,{img_base64}' width='60'>
             <span style='font-size: 20px; font-weight: 600; color: #8B0000;'>Your Data Career Starts Here</span>
         </div>
     """, unsafe_allow_html=True)
+
 except FileNotFoundError:
-    st.warning("Logo file 'your_logo.png' not found. Please add it to the app folder.")
+    st.warning("Logo file not found. Please ensure it's in the app folder.")
 
 # --- Logo ---
 
