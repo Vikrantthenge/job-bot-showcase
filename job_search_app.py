@@ -14,7 +14,10 @@ from PIL import Image
 #st.set_page_config(page_title="Job Search Bot", layout="wide")
 
 # --- Logo + Theme Phrase ---
+import streamlit as st
 from PIL import Image
+import base64
+from io import BytesIO
 
 try:
     logo = Image.open("your_logo.png")
