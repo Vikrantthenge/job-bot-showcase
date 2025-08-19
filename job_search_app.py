@@ -9,13 +9,13 @@ st.set_page_config(page_title="Job Search Bot", layout="wide")
 # --- Logo ---
 try:
     logo = Image.open("your_logo.png")
-    st.image(logo, width=120)
+    st.image(logo, width=400)
 except FileNotFoundError:
     st.warning("Logo file 'your_logo.png' not found. Please add it to the app folder.")
 
 
 # --- Title & Tagline ---
-st.title("🔍 Data Job Finder + Resume Uploader")
+st.title("Data Job Finder + Resume Uploader")
 st.markdown("##### *Your personalized job search assistant — built for speed, clarity, and results.*")
 
 # --- Sidebar Filters ---
