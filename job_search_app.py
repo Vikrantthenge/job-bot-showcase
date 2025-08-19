@@ -11,7 +11,7 @@ import requests
 from PIL import Image
 
 # --- Page Setup ---
-st.set_page_config(page_title="Job Search Bot", layout="wide")
+#st.set_page_config(page_title="Job Search Bot", layout="wide")
 
 # --- Logo + Theme Phrase ---
 from PIL import Image
