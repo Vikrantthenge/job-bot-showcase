@@ -4,11 +4,35 @@ import requests
 from PIL import Image
 
 # --- Page Setup ---
+
+import streamlit as st
+
+# Set page configuration
 st.set_page_config(
     page_title="Job Search Bot",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
+# Inject custom CSS to remove top padding
+st.markdown("""
+    <style>
+        .block-container {
+            padding-top: 0rem;
+        }
+        header {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
+
+# Display banner image
+st.image("your_logo.png", use_column_width=True)
+
+#st.set_page_config(
+ #   page_title="Job Search Bot",
+  #  layout="wide",
+   # initial_sidebar_state="collapsed"
+#)
+
 # --- Logo ---
 try:
     logo = Image.open("your_logo.png")
