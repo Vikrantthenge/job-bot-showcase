@@ -9,7 +9,7 @@ st.set_page_config(page_title="Job Search Bot", layout="wide")
 # --- Logo ---
 try:
     logo = Image.open("your_logo.png")
-    st.image(logo, width=)
+    st.image(logo, width=300)
 except FileNotFoundError:
     st.warning("Logo file 'your_logo.png' not found. Please add it to the app folder.")
 
