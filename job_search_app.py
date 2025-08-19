@@ -1,3 +1,9 @@
+st.markdown("""
+    <div style='text-align: center; font-size: 24px; font-weight: bold; color: #8B0000; margin-bottom: 20px;'>
+        🚀 <span style='color:#333;'>JobBot</span> by <span style='color:#8B0000;'>Vikrant Thenge</span>
+    </div>
+""", unsafe_allow_html=True)
+
 import streamlit as st
 import pandas as pd
 import requests
@@ -7,26 +13,16 @@ from PIL import Image
 st.set_page_config(page_title="Job Search Bot", layout="wide")
 
 # --- Logo + Theme Phrase ---
-import streamlit as st
 from PIL import Image
-import base64
-from io import BytesIO
 
-# --- Load and encode logo ---
 try:
     logo = Image.open("your_logo.png")
-    buffered = BytesIO()
-    logo.save(buffered, format="PNG")
-    img_base64 = base64.b64encode(buffered.getvalue()).decode()
-
-    # --- Display logo + phrase side-by-side ---
-    st.markdown(f"""
+    st.markdown("""
         <div style='display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;'>
-            <img src='data:image/png;base64,{img_base64}' width='60'>
+            <img src='your_logo.png' width='60'>
             <span style='font-size: 20px; font-weight: 600; color: #8B0000;'>Your Data Career Starts Here</span>
         </div>
     """, unsafe_allow_html=True)
-
 except FileNotFoundError:
     st.warning("Logo file 'your_logo.png' not found. Please add it to the app folder.")
 
@@ -109,5 +105,12 @@ st.markdown("""
    <hr style="margin-top: 2rem; margin-bottom: 0.5rem;">
     <div style='text-align: center; font-size: 12px; color: #8B0000;'>
         © 2025 VIKRANT THENGE. All rights reserved.
+    </div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+    <hr style='margin-top: 40px;'>
+    <div style='text-align: center; font-size: 14px; color: gray;'>
+        © 2025 Vikrant Thenge · Built with ❤️ using Streamlit
     </div>
 """, unsafe_allow_html=True)
