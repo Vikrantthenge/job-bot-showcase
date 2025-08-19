@@ -4,7 +4,7 @@ import requests
 from PIL import Image
 
 # --- Page Setup ---
-# st.set_page_config(page_title="Job Search Bot", layout="wide")
+st.set_page_config(page_title="Job Search Bot", layout="wide")
 
 # --- Logo ---
 try:
@@ -15,7 +15,6 @@ except FileNotFoundError:
 
 # --- Title & Tagline ---
 st.title("Data Job Finder + Resume Uploader")
-st.set_page_config(page_title="Job Search Bot", layout="wide")
 st.markdown("##### *Your personalized job search assistant — built for speed, clarity, and results.*")
 
 # --- Sidebar Filters ---
