@@ -6,13 +6,27 @@ from PIL import Image
 # --- Page Setup ---
 st.set_page_config(page_title="Job Search Bot", layout="wide")
 
+# --- Logo + Theme Phrase ---
+from PIL import Image
 
-# --- Logo ---
 try:
     logo = Image.open("your_logo.png")
-    st.image(logo, width=150)
+    st.markdown("""
+        <div style='display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;'>
+            <img src='your_logo.png' width='60'>
+            <span style='font-size: 20px; font-weight: 600; color: #8B0000;'>Your Data Career Starts Here</span>
+        </div>
+    """, unsafe_allow_html=True)
 except FileNotFoundError:
     st.warning("Logo file 'your_logo.png' not found. Please add it to the app folder.")
+
+# --- Logo ---
+
+#  try:
+   #  logo = Image.open("your_logo.png")
+    #  st.image(logo, width=150)
+#  except FileNotFoundError:
+   #  st.warning("Logo file 'your_logo.png' not found. Please add it to the app folder.")
 
 # --- Title & Tagline ---
 #st.title("Data Job Finder + Resume Uploader")
