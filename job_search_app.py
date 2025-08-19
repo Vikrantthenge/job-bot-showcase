@@ -4,12 +4,12 @@ import requests
 from PIL import Image
 
 # --- Page Setup ---
-st.set_page_config(page_title="Job Search Bot", layout="wide")
+st.set_page_config(page_title="Job Search Bot", layout="banner")
 
 # --- Logo ---
 try:
     logo = Image.open("your_logo.png")
-    st.image(logo, width=300)
+    st.image(logo, width=200)
 except FileNotFoundError:
     st.warning("Logo file 'your_logo.png' not found. Please add it to the app folder.")
 
